@@ -2,7 +2,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
 
 
-def train_neural_network_model(X_train, y_train, hidden_layer_sizes=(100,)):
+def train_neural_network_model(X_train, y_train):
     param_grid = {
         'hidden_layer_sizes': [(50,), (100,), (200,)],
         'activation': ['relu', 'tanh'],
